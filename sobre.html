@@ -8,39 +8,102 @@
     <link href="css/vars.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/sobre.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="css/rodape.css" rel="stylesheet">
     <title>Sobre - Code>Go!</title>
 </head>
     <body>
-        <header>
-            <nav>
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="sobre.html" class="nav-item">Sobre</a>
-                <a href="planos.html" class="nav-item">Planos</a>
-                <a href="cursos.html" class="nav-item">Cursos</a>
-                <a href="contato.html" class="nav-item">Contato</a>
-            </nav>
-        </header>
-        <main>
+        <div class="sidebar">
+            <div class="logo-details">
+                <i class='bx bxl-c-plus-plus icon'></i>
+                <div class="logo_name">Code>Go!</div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="sobre.html">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="links_name">Sobre</span>
+                    </a>
+                    <span class="tooltip">Sobre</span>
+                </li>
+                <li>
+                    <a href="planos.html">
+                        <i class='bx bx-user'></i>
+                        <span class="links_name">Planos</span>
+                    </a>
+                    <span class="tooltip">Planos</span>
+                </li>
+                <li>
+                    <a href="cursos.html">
+                        <i class='bx bx-chat'></i>
+                        <span class="links_name">Cursos</span>
+                    </a>
+                    <span class="tooltip">Cursos</span>
+                </li>
+    
+                <li>
+                    <a href="contato.html">
+                        <i class='bx bx-chat'></i>
+                        <span class="links_name">Contato</span>
+                    </a>
+                    <span class="tooltip">Cursos</span>
+                </li>
+                <li>
+    
+                <li class="profile">
+                    <div class="profile-details">
+                        <div class="name_job">
+                            <div class="name">Code>Go!</div>
+                            <div class="job">Cursos de Tecnologia</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </li>
+            </ul>
+        </div>
+        <section class="home-section">
             <section class="principal">
-                <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
-                <img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro">
+                <h2 class="titulo-principal">Sobre a Code>Go!</h2>
+                <img class="logo" src="img/Screenshot_20210907-120233_Logo_Maker.jpg" alt="Logo da CodeGO!">
                 <p>
-                    Localizada no coração da cidade a <strong>Barbearia Alura</strong> Alura traz para o mercado o que há de 
-                    melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura 
-                    já é destaque na cidade e conquista novos clientes a cada dia.
+                    Aqui vai o texto sobre 
                 </p>
     
                 <p id="missao">
-                 <em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em>
+                 <em>Aqui mais texto ou imagem</strong></em>
                 </p>
     
                 <p>
-                    Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
-                    O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação 
-                    dos nossos clientes.
+                    Texto ou imagem, ou vídeo 
                 </p>
             </section>
-        </main>
+            
+        </section>
+    
+        <script>
+            let sidebar = document.querySelector(".sidebar");
+            let closeBtn = document.querySelector("#btn");
+            let searchBtn = document.querySelector(".bx-search");
+    
+            closeBtn.addEventListener("click", () => {
+                sidebar.classList.toggle("open");
+                menuBtnChange();
+            });
+    
+            searchBtn.addEventListener("click", () => {
+                sidebar.classList.toggle("open");
+                menuBtnChange();
+            });
+    
+    
+            function menuBtnChange() {
+                if (sidebar.classList.contains("open")) {
+                    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+                } else {
+                    closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+                }
+            }
+        </script>
     </body>
 </html>
