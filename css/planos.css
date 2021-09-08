@@ -1,6 +1,5 @@
 .planos {
-    background-color: var(--cinza-claro);
-    
+    background-color: var(--fundo-planos);
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
