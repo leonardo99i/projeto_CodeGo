@@ -8,7 +8,9 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/vars.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
     <link href="css/contato.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="css/rodape.css" rel="stylesheet">
     <title>Contato - Code>Go!</title>
@@ -65,15 +67,70 @@
     </div>
     <section class="home-section">
         <section class="principal">
-            <h2 class="titulo-principal">Sobre a Code>Go!</h2>
-            <img class="logo" src="img/Screenshot_20210907-120233_Logo_Maker.jpg" alt="Logo da CodeGO!">
-            <p>
-                Aqui vai o formulario de contato
-            </p>
+            <div class="container">
+                <div class="box">
+                    <h1>Entre em Contato</h1>
+                    <div class="user">
+                        <i class="far fa-address-card"></i>
+                        <input
+                            type="text"
+                            name="username"
+                            id="username"
+                            autocomplete="off"
+                            placeholder="Digite o seu nome!"
+                        />
+                        <br>
+    
+                        <i class="fas fa-at"></i>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            autocomplete="off"
+                            placeholder="email@email.com"
+                        />
+                        <br>
 
-            <p>
-                link para cadastro ou login 
-            </p>
+                        <i class="fas fa-mobile-alt"></i>
+                        <input
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            autocomplete="off"
+                            placeholder="(XX) XXXXX-XXXX"
+                        />
+                        <br>
+
+                        <i class="fas fa-thumbtack"></i>
+                        <input
+                            type="text"
+                            name="text"
+                            id="text"
+                            autocomplete="off"
+                            placeholder="Assunto!"
+                        />
+                        <br>
+
+                        <i class="fas fa-quote-left"></i>
+                        <br>
+                        <br>
+                        <textarea
+                            type="textbox"
+                            name="text_box"
+                            id="text_box"
+                            autocomplete="off"
+                            placeholder="Digite aqui a sua mensagem!"
+                            cols="43"
+                            rows="5"
+                        ></textarea>
+                    </div>
+                    <div class="enviar-btn">
+                        <button class="btn">Enviar</button>
+                        <br>
+                        <p class="signup">Primeira vez por aqui? <span><br><a href="planos.html">Veja nossos planos</a></span></p>
+                    </div>
+                </div>
+            </div>
         </section>
         
     </section>
