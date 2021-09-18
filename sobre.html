@@ -8,8 +8,10 @@
     <link href="css/vars.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/sobre.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="css/login.css" rel="stylesheet">
     <link href="css/rodape.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" rel="stylesheet">
     <title>Code>Go!</title>
 </head>
     <body>
@@ -62,24 +64,65 @@
                 </li>
             </ul>
         </div>
-        <section class="home-section">
-            <section class="principal">
-                <h2 class="titulo-principal">Sobre a Code>Go!</h2>
-                <img class="logo" src="img/Screenshot_20210907-120233_Logo_Maker.jpg" alt="Logo da CodeGO!">
-                <p>
-                    Aqui vai o texto sobre 
-                </p>
-    
-                <p id="missao">
-                 <em>Aqui mais texto ou imagem</strong></em>
-                </p>
-    
-                <p>
-                    Texto ou imagem, ou vídeo 
-                </p>
+        <div class="conteudo">
+            <br>
+            <h1>Sobre a Code>Go!</h1>
+            <br>
+            <p>Isso é um paragrafo</p>
+        </div>
+
+        <ul class="planos__cartoes">
+            <section class="home-section">
+            <div class="container">
+                    <div class="box">
+                        <h1>Laura de Oliveira Moreira</h1>
+                        <div class="user">
+                            <img src="img/Foto_Laura.jpg" class="foto_Laura"></img>
+                            <br>
+
+                        </div>
+                        <div class="login-btn">
+                            <button class="btn">Saiba Mais</button>
+                            <br>
+                        </div>
+                    </div>
+                </div>
             </section>
-            
-        </section>
+    
+            <section class="home-section">
+                <div class="container">
+                        <div class="box">
+                            <h1>Leonardo Ribeiro Leonardi</h1>
+                            <div class="user">
+                                <img src="img/Foto_Leo.jpg" class="foto_Leo"></img>
+                                <br>
+    
+                            </div>
+                            <div class="login-btn">
+                                <button class="btn">Saiba Mais</button>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="home-section">
+                    <div class="container">
+                            <div class="box">
+                                <h1>Tauany Gabriel Bueno</h1>
+                                <div class="user">
+                                    <img src="img/Foto_Tauany.jpg" class="foto_Tauany"></img>
+                                    <br>
+        
+                                </div>
+                                <div class="login-btn">
+                                    <button class="btn">Saiba Mais</button>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        </ul>
     
         <script>
             let sidebar = document.querySelector(".sidebar");
@@ -105,5 +148,22 @@
                 }
             }
         </script>
+
+        <footer class="rodape container">
+            <img src="img/Screenshot_20210907-120233_Logo_Maker.jpg" alt="Logo da Apeperia" class="rodape__logo">
+            <ul class="rodape__social">
+                <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="Ícone do Facebook"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="img/twitter.png" alt="Ícone do Twitter"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="img/instagram.png" alt="Ícone do Instagram"></a></li>
+            </ul>
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li class="rodape__link"><a href="sobre.html">Sobre</a></li>
+                    <li class="rodape__link"><a href="planos.html">Planos</a></li>
+                    <li class="rodape__link"><a href="cursos.html">Cursos</a></li>
+                    <li class="rodape__link"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </footer>
     </body>
 </html>
