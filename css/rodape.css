@@ -13,6 +13,7 @@
 
 .rodape__midia {
     display: block;
+    align-items: center;
     width: 42px;
     height: 42px;
     margin: 2rem 1rem;
@@ -37,4 +38,27 @@
     max-height: 200px;
     display: inline-block;
     border-radius: 15px;
+    align-items: center;
+}
+
+.home-section_f{
+    position: relative;
+    background: #E4E9F7;
+    min-height: 20px;
+    max-height: 20px;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+}
+.sidebar.open ~ .home-section_f{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+.home-section_f .text{
+    display: inline-block;
+    color: #11101d;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 18px;
 }

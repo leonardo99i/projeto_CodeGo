@@ -9,14 +9,14 @@
     <link href="css/vars.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/sobre.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
-    <link href="css/rodape.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
-        rel="stylesheet">
+    <link href="css/planos.css" rel="stylesheet">
+    <link href="css/rodape.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Code>Go!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Sobre - Code>Go!</title>
 </head>
 
 <body>
@@ -64,75 +64,52 @@
                         <div class="name">Code>Go!</div>
                         <div class="job">Cursos de Tecnologia</div>
                     </div>
+                    <i class='bx bx-code-alt' id="log_out"></i>
                 </div>
-                <i class='bx bx-code-alt' id="log_out"></i>
             </li>
         </ul>
     </div>
-    <div class="planos__cartoes">
-        <section class="home-section">
-            <div class="container">
-                <div class="box">
-                    <h1>Laura de Oliveira Moreira</h1>
-                    <div class="user">
-                        <img src="img/Foto_Laura.jpg" class="foto_Laura"></img>
-                        <br>
-
+    <section class="home-section">
+        <section class="planos container">
+            <h1 class="conteudo__titulo">Sobre a Code>Go!</h1>
+            <br>
+            <ul class="planos__cartoes">
+                <li class="cartao cartao--ultra">
+                    <h3 class="cartao__titulo">Laura O. Moreira</h3>
+                    <div class="cartao__conteudo ">
+                        <img src="img/Foto_Laura.jpg" class="foto_Laura">
+                        <a href="https://www.linkedin.com/in/laura-moreira-41063a1a4/"
+                            class="cartao__botao cartao__botao--ultra botao">Saiba Mais</a>
                     </div>
-                    <div class="login-btn">
-                        <form action="https://www.linkedin.com/in/laura-moreira-41063a1a4/">
-                            <button class="botao__mais" type="submit">Saiba Mais</button>
-                        </form>
-                        <br>
+                </li>
+                <li class="cartao cartao--ultra">
+                    <h3 class="cartao__titulo">Leonardo R. Leonardi</h3>
+                    <div class="cartao__conteudo">
+                        <img src="img/Foto_Leo.jpg" class="foto_Leo">
+                        <a href="https://www.linkedin.com/in/leonardorleonardi/"
+                            class="cartao__botao cartao__botao--ultra botao">Saiba Mais</a>
                     </div>
-                </div>
-            </div>
+                </li>
+                <li class="cartao cartao--ultra">
+                    <h3 class="cartao__titulo">Tauany G. Bueno</h3>
+                    <div class="cartao__conteudo">
+                        <img src="img/Foto_Tauany.jpg" class="foto_Tauany">
+                        <a href="https://www.linkedin.com/in/tauanybueno/"
+                            class="cartao__botao cartao__botao--ultra botao">Saiba Mais</a>
+                    </div>
+                </li>
+            </ul>
         </section>
-
-        <section class="home-section">
-            <div class="container">
-                <div class="box">
-                    <h1>Leonardo Ribeiro Leonardi</h1>
-                    <div class="user">
-                        <img src="img/Foto_Leo.jpg" class="foto_Leo"></img>
-                        <br>
-
-                    </div>
-                    <div class="login-btn">
-                        <form action="https://www.linkedin.com/in/leonardorleonardi/">
-                            <button class="botao__mais" type="submit">Saiba Mais</button>
-                        </form>
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="home-section">
-            <div class="container">
-                <div class="box">
-                    <h1>Tauany Gabriel Bueno</h1>
-                    <div class="user">
-                        <img src="img/Foto_Tauany.jpg" class="foto_Tauany"></img>
-                        <br>
-
-                    </div>
-                    <div class="login-btn">
-                        <form action="https://www.linkedin.com/in/tauanybueno/">
-                            <button class="botao__mais" type="submit">Saiba Mais</button>
-                        </form>
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="home-section">
-        <h1 class="conteudo__titulo">Sobre a Code>Go!</h1>
-        <br>
-        <p class="conteudo__texto">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-
-    </div>
+        <div class="conteudo__texto">
+            <p class="conteudo__texto">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
+                de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco
+                séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se
+                popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e
+                mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus
+                PageMaker.</p>
+        </div>
+    </section>
 
     <script>
         let sidebar = document.querySelector(".sidebar");
@@ -159,22 +136,24 @@
         }
     </script>
 
-<footer class="rodape">
-    <img src="img/Screenshot_20210907-120233_Logo_Maker.jpg" alt="Logo da Apeperia" class="rodape__logo">
-    <ul class="rodape__social">
-        <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="Ícone do Facebook"></a></li>
-        <li><a href="#" class="rodape__midia"><img src="img/twitter.png" alt="Ícone do Twitter"></a></li>
-        <li><a href="#" class="rodape__midia"><img src="img/instagram.png" alt="Ícone do Instagram"></a></li>
-    </ul>
-    <nav>
-        <ul class="rodape__navegacao">
-            <li class="rodape__link"><a href="sobre.html">Sobre</a></li>
-            <li class="rodape__link"><a href="planos.html">Planos</a></li>
-            <li class="rodape__link"><a href="cursos.html">Cursos</a></li>
-            <li class="rodape__link"><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</footer>
+    <div class="home-section_f">
+        <footer class="rodape">
+            <img src="img/Screenshot_20210907-120233_Logo_Maker.jpg" alt="Logo da Apeperia" class="rodape__logo">
+            <ul class="rodape__social">
+                <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="Ícone do Facebook"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="img/twitter.png" alt="Ícone do Twitter"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="img/instagram.png" alt="Ícone do Instagram"></a></li>
+            </ul>
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li class="rodape__link"><a href="sobre.html">Sobre</a></li>
+                    <li class="rodape__link"><a href="planos.html">Planos</a></li>
+                    <li class="rodape__link"><a href="cursos.html">Cursos</a></li>
+                    <li class="rodape__link"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
 </body>
 
 </html>
