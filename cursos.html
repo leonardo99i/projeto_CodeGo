@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
-        rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/vars.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
-    <link href="css/cursos.css" rel="stylesheet">
+    <link href="css/sobre.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="css/planos.css" rel="stylesheet">
     <link href="css/rodape.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Cursos - Code>Go!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Sobre - Code>Go!</title>
 </head>
 
 <body>
@@ -69,70 +70,65 @@
         </ul>
     </div>
     <section class="home-section">
-        <section class="principal">
-            <h1 class="titulo-principal">Cursos da Code>Go!</h1>
+        <section class="planos container">
+            <h1 class="conteudo__titulo">Cursos Code>Go!</h1>
+            <br>
+            <br>
+            <ul class="planos__cartoes">
+                <li class="cartao cartao--ultra">
+                    <h3 class="cartao__titulo">Python</h3>
+                    <div class="cartao__conteudo ">
+                        <img src="img/python.png" class="foto_Laura">
+                        <a href="#"
+                            class="cartao__botao cartao__botao--ultra botao">Saiba Mais</a>
+                    </div>
+                </li>
+                <li class="cartao cartao--ultra">
+                    <h3 class="cartao__titulo">Java</h3>
+                    <div class="cartao__conteudo">
+                        <img src="img/java.png" class="foto_Leo">
+                        <a href="#"
+                            class="cartao__botao cartao__botao--ultra botao">Saiba Mais</a>
+                    </div>
+                </li>
+                <li class="cartao cartao--ultra">
+                    <h3 class="cartao__titulo">PHP</h3>
+                    <div class="cartao__conteudo">
+                        <img src="img/php.png" class="foto_Tauany">
+                        <a href="#"
+                            class="cartao__botao cartao__botao--ultra botao">Saiba Mais</a>
+                    </div>
+                </li>
+            </ul>
         </section>
-        <div class="planos__cartoes">
-            <section class="home-section">
-                <div class="container">
-                    <div class="box">
-                        <h1>Python</h1>
-                        <br>
-                        <div class="user">
-                            <img src="img/python.png" class="foto_Python"></img>
-                            <br>
-
-                        </div>
-                        <div class="login-btn">
-                            <form action="#">
-                                <button class="botao__mais" type="submit">Saiba Mais</button>
-                            </form>
-                            <br>
-                        </div>
+        <section class="planos container">
+            <ul class="planos__cartoes">
+                <li class="cartao cartao--ultra">
+                    <h3 class="cartao__titulo">Git</h3>
+                    <div class="cartao__conteudo ">
+                        <img src="img/git.png" class="foto_Laura">
+                        <a href="#"
+                            class="cartao__botao cartao__botao--ultra botao">Saiba Mais</a>
                     </div>
-                </div>
-            </section>
-
-            <section class="home-section">
-                <div class="container">
-                    <div class="box">
-                        <h1>Java</h1>
-                        <div class="user">
-                            <br>
-                            <img src="img/java.png" class="foto_Java"></img>
-                            <br>
-
-                        </div>
-                        <div class="login-btn">
-                            <form action="#">
-                                <button class="botao__mais" type="submit">Saiba Mais</button>
-                            </form>
-                            <br>
-                        </div>
+                </li>
+                <li class="cartao cartao--ultra">
+                    <h3 class="cartao__titulo">SQL</h3>
+                    <div class="cartao__conteudo">
+                        <img src="img/sql.png" class="foto_Leo">
+                        <a href="#"
+                            class="cartao__botao cartao__botao--ultra botao">Saiba Mais</a>
                     </div>
-                </div>
-            </section>
-
-            <section class="home-section">
-                <div class="container">
-                    <div class="box">
-                        <h1>PHP</h1>
-                        <div class="user">
-                            <img src="img/php.png" class="foto_PHP"></img>
-                            <br>
-
-                        </div>
-                        <div class="login-btn">
-                            <form action="#">
-                                <button class="botao__mais" type="submit">Saiba Mais</button>
-                            </form>
-                            <br>
-                        </div>
+                </li>
+                <li class="cartao cartao--ultra">
+                    <h3 class="cartao__titulo">Ruby</h3>
+                    <div class="cartao__conteudo">
+                        <img src="img/ruby.png" class="foto_Tauany">
+                        <a href="#"
+                            class="cartao__botao cartao__botao--ultra botao">Saiba Mais</a>
                     </div>
-                </div>
-            </section>
-        </div>
-
+                </li>
+            </ul>
+        </section>
     </section>
 
     <script>
@@ -178,7 +174,6 @@
             </nav>
         </footer>
     </div>
-
 </body>
 
 </html>

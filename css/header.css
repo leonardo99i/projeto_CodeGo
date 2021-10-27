@@ -146,7 +146,7 @@
   background: #FFF;
 }
 .sidebar li a .links_name{
-  color: #fff;
+  color: white;
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
@@ -161,7 +161,7 @@
 .sidebar li a:hover .links_name,
 .sidebar li a:hover i{
   transition: all 0.5s ease;
-  color: #11101D;
+  color: black;
 }
 .sidebar li i{
   height: 50px;
