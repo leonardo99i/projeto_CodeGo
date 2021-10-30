@@ -114,3 +114,16 @@ span{
     margin-right: auto;
     text-align: center;
 }
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(/img/4457.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #E4E9F7;
+}
