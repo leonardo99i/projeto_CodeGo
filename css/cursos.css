@@ -175,7 +175,9 @@ h1{
 
 .conteudo__titulo{
     color: black;
-    font-size: 70px;
+    font-size: 95px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .conteudo__texto{
