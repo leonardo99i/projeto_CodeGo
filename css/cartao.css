@@ -21,7 +21,7 @@ body{
   .circle {
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(120deg, #1D976C, #2c3e50);
+    background: linear-gradient(100deg, blue, red);
   }
   .circles {
     position: absolute;
