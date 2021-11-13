@@ -77,22 +77,24 @@
             <div class="container">
                 <div class="box">
                     <h1>Entre em Contato</h1>
+
+                    <form>
                     <div class="user">
                         <i class="far fa-address-card"></i>
                         <input type="text" name="username" id="username" autocomplete="off"
-                            placeholder="Digite o seu nome!" required />
+                            placeholder="Digite o seu nome!" pattern="[A-Za-z]+$" required/>
                         <br>
 
                         <i class="fas fa-at"></i>
-                        <input type="email" name="email" id="email" autocomplete="off" placeholder="email@email.com" required/>
+                        <input type="email" name="email" id="email" autocomplete="off" placeholder="email@email.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
                         <br>
 
                         <i class="fas fa-mobile-alt"></i>
-                        <input type="tel" name="tel" id="tel" autocomplete="off" placeholder="(XX) XXXXX-XXXX" required/>
+                        <input type="tel" name="tel" id="tel" autocomplete="off" placeholder="XXXXXXX-XXXX" pattern="[0-9]{7}-[0-9]{4}" required/>
                         <br>
 
                         <i class="fas fa-thumbtack"></i>
-                        <input type="text" name="text" id="text" autocomplete="off" placeholder="Assunto!" required />
+                        <input type="text" name="text" id="text" autocomplete="off" placeholder="Assunto!" maxlength="50" required/>
                         <br>
 
                         <i class="fas fa-quote-left"></i>
@@ -106,6 +108,7 @@
                         <br>
                         <p class="signup">Primeira vez por aqui? <span><br><a href="planos.html">-Veja nossos planos-</a></span></p>
                     </div>
+                </form>
                 </div>
             </div>
         </section>
