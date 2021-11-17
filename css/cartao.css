@@ -132,12 +132,11 @@ body{
     width: 420px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(25px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
     padding: 30px 30px 30px 30px;
     overflow: hidden;
-    
   }
   
   .logo{
@@ -171,7 +170,6 @@ body{
     display: inline-flex;
     margin: 0;
     padding: 0;
-    
   }
   
   .card-number 			  { 
@@ -179,8 +177,6 @@ body{
      display: inline-block;
     overflow: hidden;
     margin-bottom:30px; 
-    
-   
   }
   
   .card-number > input[id="card-number"]{
@@ -253,7 +249,7 @@ body{
   
   .card-name{ 
     font-family: 'Space Mono', monospace;
-  padding: 0px 80px  0px 0px;
+    padding: 0px 80px  0px 0px;
     margin-right: 40px;
     width: 100px;
     position:relative; 
@@ -263,28 +259,25 @@ body{
   
   .expiration-date{
     font-family: 'Space Mono', monospace;
-   padding: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px; 
     margin-right: 60px;
     width: 80px;
     position:relative; 
-     display: inline-block;
+    display: inline-block;
     overflow: hidden;
   }
   
   .ccv{
     font-family: 'Space Mono', monospace;
-   padding: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px; 
     margin-right: 0px;
     width: 60px;
     position:relative; 
-     display: inline-block;
+    display: inline-block;
     overflow: hidden;
   }
-  
-  
-  
-  
-  input {
+
+  input{
     font-family: 'Space Mono', monospace;
     border: none;
     font-size: 16px;
@@ -315,12 +308,7 @@ body{
     height: 30px;
   }
   
-  
-  
-  
-  
-  input[id="card-number"]:focus
-  {
+  input[id="card-number"]:focus{
     border: none;
     border-bottom: 2px solid white;
     color: white;
@@ -340,9 +328,6 @@ body{
     margin-bottom: -2px;
     width: 400px;
   }
-  
-  
-  
   
   input[id="card-name"]{
     color: white;
@@ -408,7 +393,6 @@ body{
     
   }
   
-  
   label {
     color: white; 
     font-size:12px;
@@ -417,5 +401,4 @@ body{
     pointer-events:none;
     display: block;
     padding-bottom: 2px;
-  
   }
