@@ -14,7 +14,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: url(/img/background.jpg)no-repeat;
+  background-image: url(../img/fundo.jpg);
   background-size: cover;
   background-position: center;
   background-color: #E4E9F7;

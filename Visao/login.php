@@ -26,7 +26,7 @@
     <div class="sidebar">
         <div class="logo-details">
             <i class='bx bxs-terminal icon'></i>
-            <div class="logo_name"><a href="../landing.php">Code>Go!</a></div>
+            <div class="logo_name"><a href="../landing.html">Code>Go!</a></div>
             <i class='bx bx-menu' id="btn"></i>
         </div>
         <ul class="nav-list">
@@ -90,8 +90,8 @@
                             
                     </div>
                     <p class="reset-password">Esqueceu a senha?</p>
-                    <div class="login-btn">
-                        <input type="submit" name="submit" value="Entrar">
+                    <div class="enviar-btn">
+                        <input class="btn" type="submit" name="submit" value="Entrar">
                         <br>
                         <p class="signup">Primeira vez por aqui? <span><br><a href="planos.html">-Veja nossos planos-</a></span></p>
                     </div>

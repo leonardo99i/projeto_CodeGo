@@ -72,7 +72,7 @@ input:focus{
     color: #ff7f50;
 }
 
-.login-btn{
+.enviar-btn{
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -81,8 +81,9 @@ input:focus{
 }
 
 .btn{
+    align-items: center;
     display: block;
-    width: 70%;
+    width: 100%;
     padding: 15px;
     background-color: #31a3ff;
     color: white;
@@ -122,7 +123,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: url(/img/4457.jpg)no-repeat;
+    background: url(../img/4457.jpg);
     background-size: cover;
     background-position: center;
     background-color: #E4E9F7;
