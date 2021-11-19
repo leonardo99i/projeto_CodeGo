@@ -92,7 +92,6 @@
                     <p class="reset-password">Esqueceu a senha?</p>
                     <div class="enviar-btn">
                         <input class="btn" type="submit" name="submit" value="Entrar">
-                        <br>
                         <p class="signup">Primeira vez por aqui? <span><br><a href="planos.html">-Veja nossos planos-</a></span></p>
                     </div>
                     </form>
