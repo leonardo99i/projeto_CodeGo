@@ -1,16 +1,3 @@
-<?php
-echo "<link rel='stylesheet' type='text/css' href='../css/login.css'/>";
-echo "<link rel='stylesheet' type='text/css' href='../css/header.css'/>";
-echo "<link rel='stylesheet' type='text/css' href='../css/reset.css'/>";
-echo "<link rel='stylesheet' type='text/css' href='../css/rodape.css'/>";
-echo "<link rel='stylesheet' type='text/css' href='../css/vars.css'/>";
-echo "<link rel='stylesheet' type='text/css' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'/>";
-echo "<link rel='shortcut icon' href='img/favicon.ico'/>";
-echo "<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap'/>";
-echo "<link rel='stylesheet' type='text/css' href='https://use.fontawesome.com/releases/v5.15.4/css/all.css'/>";
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -25,13 +12,13 @@ echo "<link rel='stylesheet' type='text/css' href='https://use.fontawesome.com/r
     <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
         rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/vars.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
-    <link href="css/rodape.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/vars.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/rodape.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon.ico">
 
 </head>
 
@@ -39,26 +26,26 @@ echo "<link rel='stylesheet' type='text/css' href='https://use.fontawesome.com/r
     <div class="sidebar">
         <div class="logo-details">
             <i class='bx bxs-terminal icon'></i>
-            <div class="logo_name"><a href="landing.php">Code>Go!</a></div>
+            <div class="logo_name"><a href="../landing.php">Code>Go!</a></div>
             <i class='bx bx-menu' id="btn"></i>
         </div>
         <ul class="nav-list">
             <li>
-                <a href="sobre.html">
+                <a href="../sobre.html">
                     <i class='bx bx-grid-alt'></i>
                     <span class="links_name">Sobre</span>
                 </a>
                 <span class="tooltip">Sobre</span>
             </li>
             <li>
-                <a href="planos.html">
+                <a href="../planos.html">
                     <i class='bx bx-cart'></i>
                     <span class="links_name">Planos</span>
                 </a>
                 <span class="tooltip">Planos</span>
             </li>
             <li>
-                <a href="cursos.html">
+                <a href="../cursos.html">
                     <i class='bx bxs-graduation'></i>
                     <span class="links_name">Cursos</span>
                 </a>
@@ -66,7 +53,7 @@ echo "<link rel='stylesheet' type='text/css' href='https://use.fontawesome.com/r
             </li>
 
             <li>
-                <a href="contato.html">
+                <a href="contato.php">
                     <i class='bx bx-chat'></i>
                     <span class="links_name">Contato</span>
                 </a>
@@ -90,20 +77,21 @@ echo "<link rel='stylesheet' type='text/css' href='https://use.fontawesome.com/r
             <div class="container">
                 <div class="box">
                     <h1>Bem-Vindo - Área de Login</h1>
-                    <form method="post"  action="../Controle/controleLogin.php">
+                    <form method="post"  action="../Controle/testeLogin.php">
                     <div class="user">
                         <i class="fas fa-user"></i>
-                            <label for="user"></label>
-                            <input type="text" name="username" id="username" autocomplete="on" placeholder="username" pattern="[A-Za-z\s]+$" maxlength="15" required />
+                                <input type="text" name="username" id="username" autocomplete="off" placeholder="Username" pattern="[A-Za-z\s]+$" maxlength="15" required>
+                                <label for="username"></label>
                         <br>
 
                         <i class="fas fa-unlock-alt"></i>
-                            <label for="senha"></label>
-                            <input type="password" name="password" id="password" autocomplete="off" placeholder="password" pattern=".{3,}" required/>
+                        <label for="senha"></label>
+                                <input type="text" name="senha" id="senha" autocomplete="off" placeholder="Digite a Senha" pattern=".{8,}" required />
+                            
                     </div>
                     <p class="reset-password">Esqueceu a senha?</p>
                     <div class="login-btn">
-                        <input type="submit" name="entrar" value="Entrar" class="btn btn-success">
+                        <input type="submit" name="submit" value="Entrar">
                         <br>
                         <p class="signup">Primeira vez por aqui? <span><br><a href="planos.html">-Veja nossos planos-</a></span></p>
                     </div>
@@ -139,18 +127,18 @@ echo "<link rel='stylesheet' type='text/css' href='https://use.fontawesome.com/r
     </script>
     <div class="home-section_f">
         <footer class="rodape">
-            <img src='img/Screenshot_20210907-120233_Logo_Maker.jpg' alt="Logo da Apeperia" class="rodape__logo">
+            <img src="../img/Screenshot_20210907-120233_Logo_Maker.jpg" alt="Logo da Apeperia" class="rodape__logo">
             <ul class="rodape__social">
-                <li><a href="#" class="rodape__midia"><img src='img/facebook.png' alt="Ícone do Facebook"></a></li>
-                <li><a href="#" class="rodape__midia"><img src='img/twitter.png' alt="Ícone do Twitter"></a></li>
-                <li><a href="#" class="rodape__midia"><img src='img/instagram.png' alt="Ícone do Instagram"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="../img/facebook.png" alt="Ícone do Facebook"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="../img/twitter.png" alt="Ícone do Twitter"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="../img/instagram.png" alt="Ícone do Instagram"></a></li>
             </ul>
             <nav>
                 <ul class="rodape__navegacao">
-                    <li class="rodape__link"><a href="#">Sobre</a></li>
-                    <li class="rodape__link"><a href="#">Planos</a></li>
-                    <li class="rodape__link"><a href="#">Cursos</a></li>
-                    <li class="rodape__link"><a href="#">Contato</a></li>
+                    <li class="rodape__link"><a href="sobre.html">Sobre</a></li>
+                    <li class="rodape__link"><a href="planos.html">Planos</a></li>
+                    <li class="rodape__link"><a href="cursos.html">Cursos</a></li>
+                    <li class="rodape__link"><a href="contato.php">Contato</a></li>
                 </ul>
             </nav>
         </footer>

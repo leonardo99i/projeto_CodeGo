@@ -6,7 +6,7 @@ session_start();
 
 <head>
     <?php
-     if (empty($_SESSION["user"]) && empty($_SESSION["senha"])) { 
+     if (empty($_SESSION["userame"]) && empty($_SESSION["senha"])) { 
         exit("Não foi possível fazer login, usuário e/ou senha inválidos");
      }
     ?>
@@ -24,9 +24,9 @@ session_start();
 <div class="row text-center">
    <div class="col-8">
      <?php 
-          echo "<h2>Olá, seja bem-vindo(a) " . $_SESSION["user"] . "</h2>"; 
+          echo "<h2>Olá, seja bem-vindo(a) " . $_SESSION["username"] . "</h2>"; 
       ?>
-     <form method="post" action="../Controle/controleLogin.php">
+     <form method="post" action="../Visao/login.php">
      <input type="submit" name="sair" class="btn btn-danger" value="Sair">
      </form>
    </div>
