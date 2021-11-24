@@ -156,9 +156,9 @@
             </ul>
             <nav>
                 <ul class="rodape__navegacao">
-                    <li class="rodape__link"><a href="sobre.html">Sobre</a></li>
-                    <li class="rodape__link"><a href="planos.html">Planos</a></li>
-                    <li class="rodape__link"><a href="cursos.html">Cursos</a></li>
+                    <li class="rodape__link"><a href="../sobre.html">Sobre</a></li>
+                    <li class="rodape__link"><a href="../planos.html">Planos</a></li>
+                    <li class="rodape__link"><a href="../cursos.html">Cursos</a></li>
                     <li class="rodape__link"><a href="contato.php">Contato</a></li>
                 </ul>
             </nav>

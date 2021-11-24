@@ -1,25 +1,45 @@
+<?php
+if (!empty($_GEt['id'])) {
+
+    include_once('../Modelo/conexaoInscricao.php');
+
+    $id = $_GET['id'];
+
+    $sqlSelect = "SELECT * FROM inscricao_aluno WHERE id=$id";
+
+    $result = $conexao->query($sqlSelect);
+    if($result->num_rows > 0){
+            $nome = $_POST['nome'];
+            $username = $_POST['username'];
+            $email = $_POST['email'];
+            $tel = $_POST['telefone'];
+            $senha = $_POST['senha'];        
+    }else{
+        header('Location: registros.php');
+    }  
+}
+?>
+
+
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code>Go! - Login</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/vars.css" rel="stylesheet">
     <link href="../css/header.css" rel="stylesheet">
     <link href="../css/login.css" rel="stylesheet">
-    <link href="../css/rodape.css" rel="stylesheet">
+    <link href="../css/contato.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../css/rodape.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/favicon.ico">
-
+    <title>Inscrição - Code>Go!</title>
 </head>
 
 <body>
@@ -53,7 +73,7 @@
             </li>
 
             <li>
-                <a href="contato.php">
+                <a href="contato.html">
                     <i class='bx bx-chat'></i>
                     <span class="links_name">Contato</span>
                 </a>
@@ -73,31 +93,51 @@
         </ul>
     </div>
     <section class="home-section">
-        <section class="section">
+        <section class="principal">
             <div class="container">
                 <div class="box">
-                    <h1>Bem-Vindo - Área de Login</h1>
-                    <form method="post"  action="../Controle/testeLogin.php">
-                    <div class="user">
-                        <i class="fas fa-user"></i>
+                    <h1>Inscricao</h1>
+                    <form action="../Visao/saveEdit.php" method="POST">
+                        <fieldset>
+                            <div class="user">
+                                <i class="far fa-address-card"></i>
+                                <input type="text" name="nome" id="nome"  autocomplete="off" placeholder="Nome" pattern="[A-Za-z\s]+$" maxlength="15" required>
+                                <label for="nome"></label>
+                                <br>
+                                <i class="far fa-address-card"></i>
                                 <input type="text" name="username" id="username" autocomplete="off" placeholder="Username" pattern="[A-Za-z\s]+$" maxlength="15" required>
                                 <label for="username"></label>
-                        <br>
+                                <br>
 
-                        <i class="fas fa-unlock-alt"></i>
-                        <label for="senha"></label>
-                                <input type="text" name="senha" id="senha" autocomplete="off" placeholder="Digite a Senha" pattern=".{8,}" required />
+                                <i class="fas fa-at"></i>
+                                <input type="text" name="email" id="email" autocomplete="off" placeholder="email@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                <label for="email"></label>
+                                <br>
+
+                                <i class="fas fa-mobile-alt"></i>
+                                <label for="telefone"></label>
+                                <input type="tel" name="telefone" id="telefone"  autocomplete="off" placeholder="XXXXXXX-XXXX" pattern="[0-9]{7}-[0-9]{4}" required />
+                                <br>
+
+                                <i class="fas fa-unlock-alt"></i>
+                                <label for="senha"></label>
+                                <input type="password" name="senha" id="senha" autocomplete="off" placeholder="Digite a Senha" pattern=".{8,}" required />
+
+                                <input type="hidden" name="id" value="<?php echo $id?>">
+                            </div>
                             
-                    </div>
-                    <p class="reset-password">Esqueceu a senha?</p>
-                    <div class="enviar-btn">
-                        <input class="btn" type="submit" name="submit" value="Entrar">
-                        <p class="signup">Primeira vez por aqui? <span><br><a href="planos.html">-Veja nossos planos-</a></span></p>
-                    </div>
                     </form>
+                    <div class="enviar-btn">
+                        <input type="submit" name="update" id="update" class="enviar-btn">
+                        <br>
+                    </div>
                 </div>
             </div>
+            </fieldset>
+            </form>
+            </div>
         </section>
+
     </section>
 
     <script>
@@ -124,6 +164,7 @@
             }
         }
     </script>
+
     <div class="home-section_f">
         <footer class="rodape">
             <img src="../img/Screenshot_20210907-120233_Logo_Maker.jpg" alt="Logo da Apeperia" class="rodape__logo">
@@ -142,7 +183,6 @@
             </nav>
         </footer>
     </div>
-
 </body>
 
 </html>

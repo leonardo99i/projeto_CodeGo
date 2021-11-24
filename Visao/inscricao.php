@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="../css/rodape.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/favicon.ico">
-    <title>Pagamento - Code>Go!</title>
+    <title>Inscrição - Code>Go!</title>
 </head>
 
 <body>
@@ -169,9 +169,9 @@ if (isset($_POST['submit'])) {
             </ul>
             <nav>
                 <ul class="rodape__navegacao">
-                    <li class="rodape__link"><a href="sobre.html">Sobre</a></li>
-                    <li class="rodape__link"><a href="planos.html">Planos</a></li>
-                    <li class="rodape__link"><a href="cursos.html">Cursos</a></li>
+                    <li class="rodape__link"><a href="../sobre.html">Sobre</a></li>
+                    <li class="rodape__link"><a href="../planos.html">Planos</a></li>
+                    <li class="rodape__link"><a href="../cursos.html">Cursos</a></li>
                     <li class="rodape__link"><a href="contato.php">Contato</a></li>
                 </ul>
             </nav>

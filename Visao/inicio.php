@@ -1,5 +1,10 @@
 <?php
-session_start();
+    session_start();
+    include_once('../Modelo/conexaoInscricao.php');
+
+    $sql = "SELECT * FROM inscricao_aluno ORDER BY id DESC";
+    $result = $conexao->query($sql);
+    //print_r($result);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
