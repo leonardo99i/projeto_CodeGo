@@ -14,5 +14,5 @@
         }
         
     }
-    header('Location: registros.php')
+    header('Location: ../Visao/registros.php')
 ?>
