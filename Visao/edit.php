@@ -8,6 +8,7 @@ if (!empty($_GEt['id'])) {
     $sqlSelect = "SELECT * FROM inscricao_aluno WHERE id=$id";
 
     $result = $conexao->query($sqlSelect);
+    
     if($result->num_rows > 0){
             $nome = $_POST['nome'];
             $username = $_POST['username'];
