@@ -6,11 +6,11 @@
         $nome = $_POST['nome'];
         $username = $_POST['username'];
         $email = $_POST['email'];
-        $tel = $_POST['telefone'];
+        $telefone = $_POST['telefone'];
         $senha = $_POST['senha'];
 
-        $sqlUpdate = "UPDATE inscricao_aluno SET nome='$nome', username='$username',
-        email='$email', telefone='$tel', senha='$senha' WHERE id='$id'";
+        $sqlUpdate = "UPDATE alunos SET nome='$nome', username='$username',
+        email='$email', telefone='$telefone', senha='$senha' WHERE id='$id'";
 
         $result = $conexao->query($sqlUpdate);
     }

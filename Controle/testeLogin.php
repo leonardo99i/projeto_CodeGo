@@ -12,7 +12,7 @@ session_start();
         //print_r('Email:' .$username);
         //print_r('Senha:' .$senha);
 
-        $sql = "SELECT * FROM inscricao_aluno WHERE username = '$username' and senha = '$senha'";
+        $sql = "SELECT * FROM alunos WHERE username = '$username' and senha = '$senha'";
 
         $result = $conexao->query($sql);
 

@@ -5,10 +5,10 @@ if (isset($_POST['submit'])) {
     $nome = $_POST['nome'];
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $tel = $_POST['telefone'];
+    $telefone = $_POST['telefone'];
     $senha = $_POST['senha'];
 
-    $result = mysqli_query($conexao, "INSERT INTO inscricao.inscricao_aluno(nome, username, email, tel, senha) 
+    $result = mysqli_query($conexao, "INSERT INTO alunos(nome, username, email, telefone, senha) 
         VALUES('$nome', '$username', '$email', '$telefone', '$senha')");
 
     header('Location:../Visao/login.php');
@@ -96,7 +96,7 @@ if (isset($_POST['submit'])) {
                         <fieldset>
                             <div class="user">
                                 <i class="far fa-address-card"></i>
-                                <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome" pattern="[A-Za-z\s]+$" maxlength="15" required>
+                                <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome" pattern="[A-Za-z\s]+$" maxlength="30" required>
                                 <label for="nome"></label>
                                 <br>
                                 <i class="far fa-address-card"></i>
@@ -110,8 +110,8 @@ if (isset($_POST['submit'])) {
                                 <br>
 
                                 <i class="fas fa-mobile-alt"></i>
+                                <input type="tel" name="telefone" id="telefone" autocomplete="off" placeholder="XXXXXX-XXXXX" pattern="[0-9]{7}-[0-9]{4}" required />
                                 <label for="telefone"></label>
-                                <input type="tel" name="telefone" id="telefone" autocomplete="off" placeholder="XXXXXXX-XXXX" pattern="[0-9]{7}-[0-9]{4}" required />
                                 <br>
 
                                 <i class="fas fa-unlock-alt"></i>
@@ -122,7 +122,7 @@ if (isset($_POST['submit'])) {
                             </div>
                     </form>
                     <div class="enviar-btn">
-                        <input type="submit" name="submit" id="submit" class="enviar-btn" onclick="return validar()">
+                        <input type="submit" name="submit" id="submit" class="btn" onclick="return validar()">
                         <br>
                     </div>
                 </div>

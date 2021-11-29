@@ -5,7 +5,7 @@ if (!empty($_GEt['id'])) {
 
     $id = $_GET['id'];
 
-    $sqlSelect = "SELECT * FROM inscricao_aluno WHERE id=$id";
+    $sqlSelect = "SELECT * FROM alunos WHERE id=$id";
 
     $result = $conexao->query($sqlSelect);
     
@@ -13,7 +13,7 @@ if (!empty($_GEt['id'])) {
             $nome = $_POST['nome'];
             $username = $_POST['username'];
             $email = $_POST['email'];
-            $tel = $_POST['telefone'];
+            $telefone = $_POST['telefone'];
             $senha = $_POST['senha'];        
     }else{
         header('Location: registros.php');
@@ -102,7 +102,7 @@ if (!empty($_GEt['id'])) {
                         <fieldset>
                             <div class="user">
                                 <i class="far fa-address-card"></i>
-                                <input type="text" name="nome" id="nome"  autocomplete="off" placeholder="Nome" pattern="[A-Za-z\s]+$" maxlength="15" required>
+                                <input type="text" name="nome" id="nome"  autocomplete="off" placeholder="Nome" pattern="[A-Za-z\s]+$" maxlength="30" required>
                                 <label for="nome"></label>
                                 <br>
                                 <i class="far fa-address-card"></i>
@@ -129,7 +129,7 @@ if (!empty($_GEt['id'])) {
                             
                     </form>
                     <div class="enviar-btn">
-                        <input type="submit" name="update" id="update" class="enviar-btn">
+                        <input type="submit" name="update" id="update" class="btn">
                         <br>
                     </div>
                 </div>

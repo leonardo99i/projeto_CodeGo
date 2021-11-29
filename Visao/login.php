@@ -86,7 +86,7 @@
 
                         <i class="fas fa-unlock-alt"></i>
                         <label for="senha"></label>
-                                <input type="text" name="senha" id="senha" autocomplete="off" placeholder="Digite a Senha" pattern=".{8,}" required />
+                                <input type="password" name="senha" id="senha" autocomplete="off" placeholder="Digite a Senha" pattern=".{8,}" required />
                             
                     </div>
                     <p class="reset-password">Esqueceu a senha?</p>

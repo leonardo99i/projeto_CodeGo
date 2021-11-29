@@ -2,7 +2,7 @@
 session_start();
 include_once('../Modelo/conexaoInscricao.php');
 
-$sql = "SELECT * FROM inscricao_aluno ORDER BY id DESC";
+$sql = "SELECT * FROM alunos ORDER BY id DESC";
 $result = $conexao->query($sql);
 //print_r($result);
 ?>
@@ -44,7 +44,7 @@ $result = $conexao->query($sql);
                         echo "<td>".$user_data['nome']."</td>";
                         echo "<td>".$user_data['username']."</td>";
                         echo "<td>".$user_data['email']."</td>";
-                        echo "<td>".$user_data['tel']."</td>";
+                        echo "<td>".$user_data['telefone']."</td>";
                         echo "<td>".$user_data['senha']."</td>";
                         echo "<td>
                             <a class='btn btn-sm btn-primary' href='edit.php?id=$user_data[id]'>

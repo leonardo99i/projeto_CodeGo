@@ -3,7 +3,7 @@
 $dbHost = 'Localhost';
 $dbUsername = 'root';
 $dbPassword = '';
-$dbName = 'inscricao';
+$dbName = 'codego';
 
 $conexao = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName);
 
