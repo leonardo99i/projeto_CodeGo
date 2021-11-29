@@ -32,7 +32,7 @@ $mensagem = $_POST['text_box'];
                 Nossa equipe está enpenhada para <br>
                 trazer uma resposta o mais rápido possivel!
                 <br>
-                Equipe Code>Go!
+                Ass: Equipe Code>Go!
             </p>
         </div>
     </div>
