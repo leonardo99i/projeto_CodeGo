@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
         <section class="principal">
             <div class="container">
                 <div class="box">
-                    <h1>Inscricao</h1>
+                    <h1>Inscrição</h1>
                     <form action="../Visao/inscricao.php" method="POST">
                         <fieldset>
                             <div class="user">
